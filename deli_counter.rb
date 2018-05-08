@@ -4,8 +4,9 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    deli_line_list = katz_deli.each_with_index do |person, index|
-      puts "#{index + 1}. #{person}"
+    deli_line_list = ""
+    katz_deli.each_with_index do |person, index|
+      deli_line_list << "#{index + 1}. #{person} "
     end
     puts deli_line_list
   end
