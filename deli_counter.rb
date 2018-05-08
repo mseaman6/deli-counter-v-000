@@ -6,9 +6,9 @@ def line(katz_deli)
   else
     deli_line_list = ""
     katz_deli.each_with_index do |person, index|
-      deli_line_list << "#{index + 1}. #{person} "
+      deli_line_list << " #{index + 1}. #{person}"
     end
-    puts "The line is currently: #{deli_line_list}"
+    puts "The line is currently:#{deli_line_list}"
   end
 end
 
